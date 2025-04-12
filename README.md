@@ -39,7 +39,7 @@ Network is a Django-based social networking platform similar to Twitter.
 ### Clone the repository
 ```bash
 git clone https://github.com/joiya514/Network-Django.git
-cd network
+cd Network-Django
 ```
 
 ### Create a virtual environment and activate it
