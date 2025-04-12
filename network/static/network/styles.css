@@ -1,0 +1,451 @@
+#new-post {
+    width: 100%;
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#new-post h3 {
+    text-align: center;
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+#new-post-form {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+#new-post-text {
+    flex: 1;
+    padding: 12px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+}
+
+#new-post-text:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.3);
+}
+
+#new-post-form input[type="submit"] {
+    padding: 12px 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: white;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+    white-space: nowrap;
+}
+
+#new-post-form input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+
+#profile-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #f4f4f4;
+    padding: 40px 20px;
+}
+
+#profile-container {
+    width: 100%;
+    max-width: 600px;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin: auto;
+}
+
+
+#profile-username {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+#profile-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #f9f9f9;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 15px;
+}
+
+.profile-stat {
+    flex: 1;
+    text-align: center;
+    border-right: 2px solid #ddd;
+    cursor: pointer;
+}
+
+.profile-stat:last-child {
+    border-right: none;
+}
+
+.profile-stat:hover {
+    background: #e0e0e0;
+    transform: scale(1.05);
+    border-radius: 5px;
+}
+
+.profile-stat h4 {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 5px;
+}
+
+.profile-stat h2 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+}
+
+#follow-unfollow {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+#follow-unfollow-btn {
+    padding: 12px 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: white;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+#follow-unfollow-btn:hover {
+    background-color: #0056b3;
+}
+
+
+
+
+.navbar-nav {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-item {
+    position: relative;
+}
+
+.nav-link {
+    text-decoration: none;
+    font-size: 16px;
+    color: #333;
+    padding: 8px 12px;
+    border-radius: 5px;
+    transition: 0.3s ease-in-out;
+}
+
+.nav-link:hover {
+    background-color: #007bff;
+    color: white;
+}
+
+.nav-link strong {
+    font-weight: bold;
+    color: #007bff;
+}
+
+.nav-link:active,
+.nav-link:focus {
+    background-color: #0056b3;
+    color: white;
+}
+
+.nav-link[href*="logout"] {
+    color: red;
+}
+
+.nav-link[href*="logout"]:hover {
+    background-color: red;
+    color: white;
+}
+
+
+
+
+
+.list-group-item {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 15px;
+    margin-bottom: 15px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    min-height: 140px;
+    justify-content: space-between;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    border: none;
+    padding: 5px 10px;
+    font-size: 14px;
+    border-radius: 5px;
+    cursor: pointer;
+    position: absolute;
+    bottom: 10px;
+    right: 20px;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+}
+
+#post-user h6 {
+    font-size: 16px;
+    font-weight: bold;
+    color: #007bff;
+    cursor: pointer;
+    margin-bottom: 8px;
+    display: inline-block;
+}
+
+#post-user h6:hover {
+    text-decoration: underline;
+}
+
+.list-group-item h5 {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.post-footer {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-top: auto;
+    outline: none;
+    border: none;
+}
+
+button:focus, .post-footer:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+.likes-container {
+    display: flex;
+    align-items: center;
+}
+
+.post-content {
+    flex-grow: 1;
+}
+
+.likes-count {
+    font-size: 14px;
+    font-weight: bold;
+    color: #666;
+    margin-left: 5px;
+}
+
+button[data-post-id] {
+    background: none;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    color: #555;
+    display: flex;
+    align-items: center;
+    outline: none;
+}
+
+button[data-post-id]:hover {
+    color: #007bff;
+}
+
+button[data-post-id] i {
+    margin-right: 5px;
+}
+
+#post-timestamp {
+    font-size: 14px;
+    color: #666;
+    margin: 0;
+    padding-top: 2px;
+}
+
+
+
+
+textarea[id^="edit-content-"] {
+    width: calc(100% - 20px);
+    height: 150px;
+    padding: 10px;
+    font-size: 16px;
+    font-family: 'Arial', sans-serif;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    transition: border-color 0.3s ease-in-out;
+    resize: none;
+    background-color: #f9f9f9;
+    color: #333;
+    margin: 10px 0;
+}
+
+textarea[id^="edit-content-"]:focus {
+    border-color: #4CAF50;
+    outline: none;
+}
+
+button[id^="save-btn-"] {
+    padding: 10px 20px;
+    font-size: 16px;
+    font-family: 'Arial', sans-serif;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+    margin-left: 10px;
+}
+
+button[id^="save-btn-"]:hover {
+    background-color: #45a049;
+}
+
+button[id^="save-btn-"]:active {
+    background-color: #388e3c;
+}
+
+/* Styling for container */
+div[id^="edit-content-container-"] {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin: 20px;
+}
+
+div[id^="edit-content-container-"] textarea {
+    width: 100%;
+}
+
+div[id^="edit-content-container-"] button {
+    align-self: flex-end;
+}
+
+
+
+
+
+
+
+
+/* Style for the "Previous" and "Next" buttons */
+#prev-btn, #next-btn {
+    padding: 10px 20px;
+    font-size: 16px;
+    font-family: 'Arial', sans-serif;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+    margin: 5px;  /* Space between buttons */
+}
+
+#prev-btn:hover, #next-btn:hover {
+    background-color: #45a049;
+}
+
+#prev-btn:active, #next-btn:active {
+    background-color: #388e3c;
+}
+
+/* Optional: Center buttons horizontally */
+#pagination-div {
+    text-align: center;
+    align-items: center;
+}
+
+/* Additional button spacing */
+#prev-btn {
+    margin-right: 10px;  /* Space between "Previous" and "Next" buttons */
+}
+
+
+
+#posts-heading {
+    font-family: 'Arial', sans-serif;
+    font-size: 32px;
+    font-weight: bold;
+    color: #333;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-transform: capitalize;
+    letter-spacing: 2px;
+    border-bottom: 1px solid #85888a;
+    padding-bottom: 10px;
+}
+
+
+
+
+.follower-user-div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    margin: 8px 0;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+
+.follower-user-div h3,
+.follower-user-div h5 {
+    margin: 0 10px;
+    font-weight: normal;
+}
+
+.follower-user-div h3 {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.follower-user-div h5 {
+    font-size: 1em;
+    color: #666;
+}

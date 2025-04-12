@@ -1,0 +1,37 @@
+{% extends "network/layout.html" %}
+
+{% block body %}
+{% if user.is_authenticated %}
+<div id="new-post">
+    <h3>New Post</h3>
+    <form id="new-post-form">
+        <input type="text" id="new-post-text" placeholder="Write something">
+        <input type="submit" value="Post">
+    </form>
+</div>
+{% endif %}
+<div id="profile-page">
+    <div id="profile-container">
+        <div id="profile-username">
+        </div>
+        <div id="profile-header">
+            <div id="profile-followers" class="profile-stat">
+                <h4>Followers</h4>
+                <h2 id="follower-count"></h2>
+            </div>
+            <div id="profile-following" class="profile-stat">
+                <h4>Following</h4>
+                <h2 id="following-count"></h2>
+            </div>
+            <div id="profile-likes" class="profile-stat">
+                <h4>Likes</h4>
+                <h2 id="likes-count"></h2>
+            </div>
+        </div>
+        <div id="follow-unfollow">
+        </div>
+    </div>
+</div>
+<div id="posts-page"></div>
+<div id="followers-following"></div>
+{% endblock %}
